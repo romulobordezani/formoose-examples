@@ -1,15 +1,23 @@
 {
   "name": "formoose-example-react-hooks",
-  "version": "0.1.0",
-  "private": true,
+  "version": "2.0.0",
+  "private": false,
+  "engine": {
+    "node": "18.17.1"
+  },
+  "license": "ISC",
   "dependencies": {
-    "formoose": "file: ../../../../",
-    "i18next": "^17.0.11",
-    "i18next-browser-languagedetector": "^3.0.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-i18next": "^11.3.3",
-    "react-scripts": "3.1.1"
+    "formoose": "2.0.0",
+    "i18next": "^23.4.6",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "react-i18next": "^13.2.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +26,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [

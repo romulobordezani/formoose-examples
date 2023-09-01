@@ -1,6 +1,6 @@
-import i18n from 'i18next/index';
-import { initReactI18next } from 'react-i18next/src/index';
-import detector from 'i18next-browser-languagedetector/index';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import detector from 'i18next-browser-languagedetector';
 
 import translationEN from './locales/en/translation.json';
 import translationPTBR from './locales/pt-BR/translation.json';

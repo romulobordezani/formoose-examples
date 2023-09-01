@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
-import Formoose from 'formoose';
-import { withTranslation } from 'react-i18next/src/index';
+import { Formoose, handleFieldChange, validateOneField, validateAllFieldsSync, mountFormData } from 'formoose';
+import { withTranslation } from 'react-i18next';
 
 import schema from './schema';
 
 function FormooseForm({ t }) {
 
   const formoose = new Formoose(schema, t);
-  const { handleFieldChange, validateOneField, validateAllFieldsSync, mountFormData } = formoose.tools;
-  const [formData, stateSetter] = useState(mountFormData());
+  const [formData, stateSetter] = useState(mountFormData(schema()));
   formoose.formData = formData;
   formoose.stateSetter = stateSetter;
 
   const handleSubmit = async e => {
     e.preventDefault();
-    let formIsValid = await validateAllFieldsSync();
+    let formIsValid;
+
+    try {
+      formIsValid = await validateAllFieldsSync();
+    } catch (error) {
+      console.error(error);
+    }
 
     if (formIsValid) {
       alert('We are good to go!');
