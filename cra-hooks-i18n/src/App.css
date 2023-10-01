@@ -26,9 +26,10 @@
 .App-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  padding-top: 50px;
   color: white;
 }
 
@@ -50,7 +51,22 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: 0.2em 0.8em 1.6em var(--light-grey);
+}
+
+.field {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-height: 100px;
+  align-items: center;
+  justify-items: center;
+}
+
+.field label {
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -81,4 +97,36 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 10px var(--paper-white) inset;
   transition: background-color 5000s ease-in-out 0s;
   font-family: sans-serif;
+}
+
+.button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #c6551c);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }

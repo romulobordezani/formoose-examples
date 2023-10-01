@@ -1,0 +1,11 @@
+{
+  "alphabetical-chars-only": "Somente letras.",
+  "is-not-a-boolean": "Não é um booleano.",
+  "is-empty": "Obrigatório.",
+  "is-not-a-number": "Esperado um valor numérico.",
+  "does-not-match-enum": "Não é um dos valores esperados.",
+  "chars-limit-exceeded": "Limite máximo de caracteres {{length}} alcançado",
+  "chars-lenght-is-too-short": "Muito curto.",
+  "is-not-an-array": "Não é um alista",
+  "failed-custom-validate": "Validação customizada falhou."
+}

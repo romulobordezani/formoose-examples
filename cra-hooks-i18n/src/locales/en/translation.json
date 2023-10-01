@@ -1,0 +1,11 @@
+{
+  "alphabetical-chars-only": "Alphabetical characters only.",
+  "is-not-a-boolean": "Must to be a boolean.",
+  "is-empty": "Required.",
+  "is-not-a-number": "Must be a number.",
+  "does-not-match-enum": "Value not allowed.",
+  "chars-limit-exceeded": "Max characters reached",
+  "chars-lenght-is-too-short": "Too short.",
+  "is-not-an-array": "List expected.",
+  "failed-custom-validate": "Custom validation failed."
+}

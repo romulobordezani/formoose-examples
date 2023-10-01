@@ -14,7 +14,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="App-disclaimer">
-          What's the name of your next Form Validation Helper?
+          Who are you?
         </div>
         <FormooseForm />
       </div>
